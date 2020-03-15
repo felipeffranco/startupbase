@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.ansonika.com/mavia/ -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="MAVIA - Register, Reservation, Questionare, Reviews form wizard">
+	<meta name="author" content="Ansonika">
+	<title>MAVIA | Register, Reservation, Questionare, Reviews form wizard</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="http://www.ansonika.com/mavia/img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="http://www.ansonika.com/mavia/img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="http://www.ansonika.com/mavia/img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="http://www.ansonika.com/mavia/img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="http://www.ansonika.com/mavia/img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="./css" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="./bootstrap.min.css" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
+	<link href="./responsive.css" rel="stylesheet">
+	<link href="./menu.css" rel="stylesheet">
+	<link href="./animate.min.css" rel="stylesheet">
+	<link href="./all_icons_min.css" rel="stylesheet">
+	<link href="./grey.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="./custom.css" rel="stylesheet">
+
+	<script src="./modernizr.js.download"></script>
+	<!-- Modernizr -->
+
+</head>
+
+<body class="vsc-initialized" style="overflow: visible;">
+	
+	<div id="preloader" style="display: none;">
+		<div data-loader="circle-side" style="display: none;"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<header>
+		<div class="container-fluid">
+		    <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="http://www.ansonika.com/mavia/index.html">MAVIA | Register, Reservation, Questionare, Reviews form wizard</a></h1>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <ul>
+                            <li><a href="http://www.ansonika.com/mavia/#0"><i class="icon-facebook"></i></a></li>
+                            <li><a href="http://www.ansonika.com/mavia/#0"><i class="icon-twitter"></i></a></li>
+                            <li><a href="http://www.ansonika.com/mavia/#0"><i class="icon-google"></i></a></li>
+                            <li><a href="http://www.ansonika.com/mavia/#0"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                    <nav>
+                        <ul class="cd-primary-nav">
+                            <li><a href="http://www.ansonika.com/mavia/index.html" class="animated_link">Register Version</a></li>
+                            <li><a href="http://www.ansonika.com/mavia/reservation_version.html" class="animated_link">Reservation Version</a></li>
+                            <li><a href="http://www.ansonika.com/mavia/questionare_version.html" class="animated_link">Questionare Version</a></li>
+                            <li><a href="http://www.ansonika.com/mavia/review_version.html" class="animated_link">Review Version</a></li>
+                            <li><a href="http://www.ansonika.com/mavia/about.html" class="animated_link">About Us</a></li>
+                            <li><a href="http://www.ansonika.com/mavia/contacts.html" class="animated_link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+		</div>
+		<!-- container -->
+	</header>
+	<!-- End Header -->
+
+	<main>
+		<div id="form_container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div id="left_form">
+						<figure><img src="./registration_bg.svg" alt=""></figure>
+						<h2>Registration</h2>
+						<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+						<a href="http://www.ansonika.com/mavia/#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7">
+
+					<div id="wizard_container" class="wizard" novalidate="novalidate">
+						<div id="top-wizard">
+							<div id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="display: none; width: 0%;"></div></div>
+						</div>
+						<!-- /top-wizard -->
+						<form name="example-1" id="wrapped" method="POST" action="http://www.ansonika.com/mavia/registration_send.php" class="wizard-form">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard" class="wizard-branch wizard-wrapper">
+
+								<div class="step wizard-step current" style="">
+									<h3 class="main_question wizard-header"><strong>1/3</strong>Please fill with your details</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="firstname" class="form-control required" placeholder="First name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="lastname" class="form-control required" placeholder="Last name">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" name="email" class="form-control required" placeholder="Your Email">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="telephone" class="form-control" placeholder="Your Telephone">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="age" class="form-control" placeholder="Age">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group radio_input">
+												<label><div class="iradio_square-grey checked" style="position: relative;"><input type="radio" value="Male" checked="" name="gender" class="icheck" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>Male</label>
+												<label><div class="iradio_square-grey" style="position: relative;"><input type="radio" value="Female" name="gender" class="icheck" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>Female</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step-->
+
+								<div class="step wizard-step" style="display: none;">
+									<h3 class="main_question"><strong>2/3</strong>Please fill with additional info</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" name="address" class="form-control required" placeholder="Address">
+											</div>
+										</div>
+										<!-- /col-sm-12 -->
+									</div>
+									<!-- /row -->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="city" class="form-control required" placeholder="City">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<input type="text" name="zip_code" class="form-control required" placeholder="Zip code">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="styled-select">
+													<select class="required" name="country">
+														<option value="" selected="">Select your country</option>
+														<option value="Europe">Europe</option>
+														<option value="Asia">Asia</option>
+														<option value="North America">North America</option>
+														<option value="South America">South America</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step-->
+
+								<div class="submit step wizard-step" disabled="disabled" style="display: none;">
+									<h3 class="main_question"><strong>3/3</strong>Send an optional message</h3>
+									<div class="form-group">
+										<textarea name="additional_message" class="form-control" style="height:150px;" placeholder="Hello world....write your messagere here!"></textarea>
+									</div>
+									<div class="form-group terms">
+										<div class="icheckbox_square-grey" style="position: relative;"><input name="terms" type="checkbox" class="icheck required" value="yes" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+										<label>Please accept <a href="http://www.ansonika.com/mavia/#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?</label>
+									</div>
+								</div>
+								<!-- /step-->
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward" disabled="disabled">Backward </button>
+								<button type="button" name="forward" class="forward">Forward</button>
+								<button type="submit" name="process" class="submit" disabled="disabled">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				</div>
+			</div><!-- /Row -->
+		</div><!-- /Form_container -->
+	</main>
+	
+	<footer id="home" class="clearfix">
+		<p>© 2018 Mavia</p>
+		<ul>
+			<li><a href="https://1.envato.market/JALeR" class="animated_link">Purchase this template</a></li>
+			<li><a href="http://www.ansonika.com/mavia/#0" class="animated_link">Terms and conditions</a></li>
+			<li><a href="http://www.ansonika.com/mavia/#0" class="animated_link">Contacts</a></li>
+		</ul>
+	</footer>
+	<!-- end footer-->
+	
+	<div class="cd-overlay-nav">
+		<span class="" style="transform: scaleX(0) scaleY(0); height: 4253.76px; width: 4253.76px; top: -2126.88px; left: -2126.88px;"></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span class="" style="transform: scaleX(0) scaleY(0); height: 4253.76px; width: 4253.76px; top: -2126.88px; left: -2126.88px;"></span>
+	</div>
+	<!-- cd-overlay-content -->
+
+	<a href="http://www.ansonika.com/mavia/#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- SCRIPTS -->
+	<!-- Jquery-->
+	<script src="./jquery-3.2.1.min.js.download"></script>
+	<!-- Common script -->
+	<script src="./common_scripts_min.js.download"></script>
+	<!-- Wizard script -->
+	<script src="./registration_wizard_func.js.download"></script>
+	<!-- Menu script -->
+	<script src="./velocity.min.js.download"></script>
+	<script src="./main.js.download"></script>
+	<!-- Theme script -->
+	<script src="./functions.js.download"></script>
+
+
+</body></html>
